@@ -15,5 +15,5 @@ VOL=/data
 if [ $# -ne 1 ]; then
   echo 1>&2 "Pass in the name of the data container"
 else
-  docker run --name $1 -v $VOL lingz/data
+  docker run --name $1 lingz/data
 fi
