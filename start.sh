@@ -10,8 +10,6 @@
 
 # First argument gives the name.
 
-VOL=/data
-
 if [ $# -ne 2 ]; then
   echo 1>&2 "First arg = container name, Second arg = mounted volume"
 else
