@@ -12,8 +12,8 @@
 
 VOL=/data
 
-if [ $# -ne 1 ]; then
-  echo 1>&2 "Pass in the name of the data container"
+if [ $# -ne 2 ]; then
+  echo 1>&2 "First arg = container name, Second arg = mounted volume"
 else
-  docker run --name $1 lingz/data
+  docker run -d -v $2 --name $1 lingz/data
 fi
